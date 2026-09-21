@@ -1,0 +1,13 @@
+# Build and debugger files
+*.obj
+*.pdb
+*.ilk
+.vs/
+
+# TeX temporary files (keep report.pdf)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.xdv

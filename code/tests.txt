@@ -1,0 +1,93 @@
+Проверка собранного lab1.exe в консоли Windows.
+Все 14 тестов пройдены.
+
+INPUT: 0
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 0
+x (decimal) = 0
+11*x*x - 2*x + 1 (binary) = 1
+11*x*x - 2*x + 1 (decimal) = 1
+
+INPUT: 1
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 1
+x (decimal) = 1
+11*x*x - 2*x + 1 (binary) = 1010
+11*x*x - 2*x + 1 (decimal) = 10
+
+INPUT: -1
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): -1
+x (decimal) = -1
+11*x*x - 2*x + 1 (binary) = 1110
+11*x*x - 2*x + 1 (decimal) = 14
+
+INPUT: 7
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 7
+x (decimal) = 7
+11*x*x - 2*x + 1 (binary) = 1000001110
+11*x*x - 2*x + 1 (decimal) = 526
+
+INPUT: 10
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 10
+x (decimal) = 8
+11*x*x - 2*x + 1 (binary) = 1010110001
+11*x*x - 2*x + 1 (decimal) = 689
+
+INPUT: -10
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): -10
+x (decimal) = -8
+11*x*x - 2*x + 1 (binary) = 1011010001
+11*x*x - 2*x + 1 (decimal) = 721
+
+INPUT: 123
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 123
+x (decimal) = 83
+11*x*x - 2*x + 1 (binary) = 10010011101011110
+11*x*x - 2*x + 1 (decimal) = 75614
+
+INPUT: 00017
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 00017
+x (decimal) = 15
+11*x*x - 2*x + 1 (binary) = 100110001110
+11*x*x - 2*x + 1 (decimal) = 2446
+
+INPUT: 33224
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): 33224
+x (decimal) = 13972
+11*x*x - 2*x + 1 (binary) = 1111111111111100001000000001001
+11*x*x - 2*x + 1 (decimal) = 2147356681
+
+INPUT: -33224
+EXIT: 0
+Enter x in base 8 (digits 0-7, optional minus): -33224
+x (decimal) = -13972
+11*x*x - 2*x + 1 (binary) = 1111111111111101110101001011001
+11*x*x - 2*x + 1 (decimal) = 2147412569
+
+INPUT: 8
+EXIT: 1
+Enter x in base 8 (digits 0-7, optional minus): 8
+Error: invalid octal input or 32-bit overflow.
+
+INPUT: -
+EXIT: 1
+Enter x in base 8 (digits 0-7, optional minus): -
+Error: invalid octal input or 32-bit overflow.
+
+INPUT: 12a
+EXIT: 1
+Enter x in base 8 (digits 0-7, optional minus): 12a
+Error: invalid octal input or 32-bit overflow.
+
+INPUT: 33225
+EXIT: 1
+Enter x in base 8 (digits 0-7, optional minus): 33225
+x (decimal) = 13973
+Error: invalid octal input or 32-bit overflow.
