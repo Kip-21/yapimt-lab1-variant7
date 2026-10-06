@@ -10,7 +10,7 @@
 - [Исходный код](code/main.asm)
 - [Инструкция по сборке, запуску и отладке](code/README.md)
 - [Результаты 14 тестов](code/tests.txt)
-- [Отчёт PDF с титульной страницей](report/report_with_cover.pdf)
+- [Отчёт PDF с титульной страницей](report/report.pdf)
 - [Исходник отчёта LaTeX](report/report.tex)
 - [Контрольные вопросы для подготовки к защите](report/Контрольные%20вопросы.md)
 
@@ -18,7 +18,7 @@
 `report` и выполните:
 
 ```bat
-xelatex -jobname=report_with_cover -interaction=nonstopmode report.tex
+xelatex -interaction=nonstopmode -halt-on-error report.tex
 ```
 
 XeLaTeX автоматически включает `report/титульник.pdf` первой страницей.

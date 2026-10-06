@@ -73,7 +73,7 @@ CALL дополнительно помещает адрес возврата. Ф
 - `main.asm` — исходный код; дополнительные библиотеки кроме kernel32.lib не нужны.
 - `build.bat`, `run.bat` — сборка и запуск программы.
 - `tests.txt` — результаты проверочных запусков.
-- `../report/report.tex` и `../report/report_with_cover.pdf` — отчёт.
+- `../report/report.tex` и `../report/report.pdf` — отчёт.
 - `../report/титульник.pdf` — титульная страница, автоматически вставляется первой.
 - `../тесты/1.jpg`–`../тесты/10.jpg` — изображения тестов в отчёте.
 
@@ -82,7 +82,7 @@ CALL дополнительно помещает адрес возврата. Ф
 Откройте папку `report` и выполните:
 
 ```bat
-xelatex -jobname=report_with_cover -interaction=nonstopmode -halt-on-error report.tex
+xelatex -interaction=nonstopmode -halt-on-error report.tex
 ```
 
 Нужны XeLaTeX и пакет `pdfpages`. Сохраняйте структуру папок проекта:
