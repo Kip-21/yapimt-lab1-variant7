@@ -128,6 +128,21 @@ PrintNumber PROC
     NEG EAX
 magnitudeReady:
     MOV quotient, EAX
+    CMP base, 2
+    JNE nextDigit
+nextBit:
+    XOR EDX, EDX
+    SHR EAX, 1
+    ADC EDX, 0
+    MOV quotient, EAX
+    MOV remainder, EDX
+    ADD EDX, '0'
+    DEC position
+    MOV ECX, position
+    MOV outputBuffer[ECX], DL
+    CMP EAX, 0
+    JNE nextBit
+    JMP checkSign
 nextDigit:
     MOV EAX, quotient
     XOR EDX, EDX
@@ -140,6 +155,7 @@ nextDigit:
     MOV outputBuffer[ECX], DL
     CMP quotient, 0
     JNE nextDigit
+checkSign:
     CMP negative, 0
     JE printDigits
     DEC position
